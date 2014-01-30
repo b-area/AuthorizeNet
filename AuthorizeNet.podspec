@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "AuthorizeNet"
-  s.version      = "0.1.2"
+  s.version      = "0.1.3"
   s.summary      = "Authorize Net payment gateway Library for iOS"
     s.homepage     = "http://rasolofonirina.com"
   s.screenshots  = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
