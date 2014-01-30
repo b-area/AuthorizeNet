@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
   s.name         = "AuthorizeNet"
-  s.version      = "0.1.5"
+  s.version      = "0.1.6"
   s.summary      = "Authorize Net payment gateway Library for iOS"
     s.homepage     = "http://rasolofonirina.com"
   s.screenshots  = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license      = 'MIT'
   s.author       = { "Eddy C. Borera" => "eddyborera.c@gmail.com" }
-  s.source       = { :git => "https://github.com/b-area/AuthorizeNet.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/b-area/AuthorizeNet.git", :tag => s.version.to_s, :submodules => true}
 
 
   s.platform     = :ios, '5.0'
