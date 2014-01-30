@@ -156,9 +156,9 @@
                         "TransactionDetails.prepaidBalanceRemaining = %@\n"
 						"TransactionDetails.taxExempt = %@\n"
 						"TransactionDetails.payment = %@\n"
-                        "TransactionDetails.customer = @%\n"
-                        "TransactionDetails.billTo = @%\n"
-                        "TransactionDetails.shipTo = @%\n"
+                        "TransactionDetails.customer = %@\n"
+                        "TransactionDetails.billTo = %@\n"
+                        "TransactionDetails.shipTo = %@\n"
 						"TransactionDetails.recurringBilling = %@\n"
 						"TransactionDetails.customerIP = %@\n",
 						self.transId,

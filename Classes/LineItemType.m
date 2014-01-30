@@ -106,7 +106,7 @@
 
 - (NSString *) description {
 	
-	NSMutableString *output = [NSString stringWithFormat:@""
+	NSString *output = [NSString stringWithFormat:@""
 							   "LineItem.itemID = %@\n"
 							   "LineItem.itemName = %@\n"
 							   "LineItem.itemDescription = %@\n"

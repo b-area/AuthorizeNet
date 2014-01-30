@@ -50,43 +50,43 @@
     request.anetApiRequest.merchantAuthentication.mobileDeviceId = MOBILE_DEVICE_ID;
     
     SettingType *s = [SettingType settingType];
-    s.name = [NSString stringWithString:@"duplicateWindow"];
-    s.value = [NSString stringWithString:@"1"];
+    s.name = @"duplicateWindow";
+    s.value = @"1";
     [request.transactionRequest.transactionSettings addObject:s];
     
     s = [SettingType settingType];
-    s.name = [NSString stringWithString:@"emailCustomer"];
-    s.value = [NSString stringWithString:@"false"];
+    s.name = @"emailCustomer";
+    s.value = @"false";
     [request.transactionRequest.transactionSettings addObject:s];
 
     s = [SettingType settingType];
-    s.name = [NSString stringWithString:@"recurringBilling"];
-    s.value = [NSString stringWithString:@"false"];
+    s.name = @"recurringBilling";
+    s.value = @"false";
     [request.transactionRequest.transactionSettings addObject:s];
 
     s = [SettingType settingType];
-    s.name = [NSString stringWithString:@"testRequest"];
-    s.value = [NSString stringWithString:@"false"];
+    s.name = @"testRequest";
+    s.value = @"false";
     [request.transactionRequest.transactionSettings addObject:s];
 
     s = [SettingType settingType];
-    s.name = [NSString stringWithString:@"headerEmailReceipt"];
-    s.value = [NSString stringWithString:@"header value"];
+    s.name = @"headerEmailReceipt";
+    s.value = @"header value";
     [request.transactionRequest.transactionSettings addObject:s];
 
     s = [SettingType settingType];
-    s.name = [NSString stringWithString:@"footerEmailReceipt"];
-    s.value = [NSString stringWithString:@"footer value"];
+    s.name = @"footerEmailReceipt";
+    s.value = @"footer value";
     [request.transactionRequest.transactionSettings addObject:s];
     
 //    s = [SettingType settingType];
-//    s.name = [NSString stringWithString:@"merchantEmail"];
-//    s.value = [NSString stringWithString:@"shiun@visa.labzero.com"];
+//    s.name = @"merchantEmail";
+//    s.value = @"shiun@visa.labzero.com";
 //    [request.transactionRequest.transactionSettings addObject:s];
 
 //    s = [SettingType settingType];
-//    s.name = [NSString stringWithString:@"allowPartialAuth"];
-//    s.value = [NSString stringWithString:@"false"];
+//    s.name = @"allowPartialAuth";
+//    s.value = @"false";
 //    [request.transactionRequest.transactionSettings addObject:s];
 
     
@@ -364,7 +364,7 @@
     STAssertTrue((an.response != nil), @"Response from mobileDeviceRegistrationRequest should not be nil!");
     STAssertTrue([an.response.anetApiResponse.messages.resultCode isEqualToString:@"Ok"], @"Result Code for mobileDeviceRegistrationResponse was not Ok");
     
-    NSString *sessionToken = [NSString stringWithString:((MobileDeviceLoginResponse *)an.response).sessionToken];
+    NSString *sessionToken = ((MobileDeviceLoginResponse *)an.response).sessionToken;
     NSLog(@"Session Token = %@", sessionToken);
 
     return sessionToken;
@@ -407,7 +407,7 @@
     STAssertTrue((an.response != nil), @"Response from mobileDeviceRegistrationRequest should not be nil!");
     STAssertTrue([an.response.anetApiResponse.messages.resultCode isEqualToString:@"Ok"], @"Result Code for mobileDeviceRegistrationResponse was not Ok");
     
-    NSString *sessionToken = [NSString stringWithString:((MobileDeviceLoginResponse *)an.response).sessionToken];
+    NSString *sessionToken = ((MobileDeviceLoginResponse *)an.response).sessionToken;
     NSLog(@"Session Token = %@", sessionToken);
     
     return sessionToken;
@@ -1159,8 +1159,8 @@
     
     //Setting request as a test request
     SettingType *s = [SettingType settingType];
-    s.name = [NSString stringWithString:@"testRequest"];
-    s.value = [NSString stringWithString:@"true"];
+    s.name = @"testRequest";
+    s.value = @"true";
     [request.transactionRequest.transactionSettings addObject:s];
     
     AuthNet *an = [AuthNet getInstance];
@@ -1933,8 +1933,8 @@
 
 
 - (void)testStringWithEscapedXMLValue {
-    NSString *testString = [NSString stringWithString:@"\"'<>&a quick fox jumped over the lazy dog."];
-    NSString *escapedString = [NSString stringWithString:@"&quot;&apos;&lt;&gt;&amp;a quick fox jumped over the lazy dog."];
+    NSString *testString = @"\"'<>&a quick fox jumped over the lazy dog.";
+    NSString *escapedString = @"&quot;&apos;&lt;&gt;&amp;a quick fox jumped over the lazy dog.";
     NSString *resultString = [NSString stringWithEscapedXMLValue:testString];
     NSLog(@"escaped string = %@", escapedString);
     NSLog(@"result string = %@", resultString);

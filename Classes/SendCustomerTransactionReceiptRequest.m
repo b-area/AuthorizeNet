@@ -41,8 +41,8 @@
 - (NSString *) description {
     NSString *output = [NSString stringWithFormat:@""
                         @"SendCustomerTransactionReceiptRequest.anetApiRequest = %@"
-                        @"SendCustomerTransactionReceiptRequest.transId = %@",
-                        @"SendCustomerTransactionReceiptRequest.customerEmail = %@",
+                        @"SendCustomerTransactionReceiptRequest.transId = %@"
+                        @"SendCustomerTransactionReceiptRequest.customerEmail = %@"
                         @"SendCustomerTransactionReceiptRequest.emailSettings = %@",
                         super.anetApiRequest,
                         self.transId,
