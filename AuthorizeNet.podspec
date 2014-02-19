@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "AuthorizeNet"
-  s.version      = "0.1.2"
+  s.version      = "0.1.1"
   s.summary      = "Authorize Net payment gateway Library for iOS"
   s.homepage     = "https://github.com/b-area/AuthorizeNet.git"
   s.screenshots  = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.ios.exclude_files = 'Classes/osx'
   s.osx.exclude_files = 'Classes/ios'
   # s.public_header_files = 'Classes/**/*.h'
-  s.frameworks = 'SenTestingKit', 'UIKit'
+  #s.frameworks = 'SenTestingKit', 'UIKit'
   # s.frameworks = 'SomeFramework', 'AnotherFramework'
   # s.dependency 'JSONKit', '~> 1.4'
 
